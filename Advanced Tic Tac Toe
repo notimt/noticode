@@ -1,0 +1,26 @@
+game = [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],]
+
+a = [0,0]
+b = [0,1]
+c = [0,2]
+d = [1,0]
+e = [1,1]
+f = [1,2]
+g = [2,0]
+h = [2,1]
+i = [2,2]
+
+print("   0  1  2")
+for count, row in enumerate(game):
+    print(count, row)
+
+
+location = (count, row)
+def place_picked(player=1, location=0):
+    print("   a  b  c")
+    game[location]= player
+
+place_picked(1,2)
+place_picked(2,2)
